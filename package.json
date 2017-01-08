@@ -1,22 +1,17 @@
 {
-  "name": "electron-quick-start",
+  "name": "canvas-shell",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
+    "build": "electron-packager . Canvas --icon canvas.icons --osx-sign --out out",
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
+  "repository": "https://github.com/andrewbranch/canvas-shell",
+  "author": "Andrew Branch <andrew@wheream.io>",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.4.1",
+    "electron-packager": "^8.4.0"
   }
 }
