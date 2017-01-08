@@ -4,7 +4,7 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "build": "electron-packager . Canvas --icon canvas.icons --osx-sign --out out",
+    "build": "electron-packager . Canvas --icon canvas.icons --osx-sign --out out --overwrite",
     "start": "electron ."
   },
   "repository": "https://github.com/andrewbranch/canvas-shell",
@@ -13,5 +13,8 @@
   "devDependencies": {
     "electron": "^1.4.1",
     "electron-packager": "^8.4.0"
+  },
+  "dependencies": {
+    "electron-default-menu": "^1.0.0"
   }
 }
