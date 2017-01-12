@@ -33,6 +33,12 @@ function createWindow () {
   mainWindow.on('closed', function () {
     app.quit()
   })
+
+  // Open links in browser
+  mainWindow.webContents.on('new-window', function (event, url) {
+    event.preventDefault()
+    shell.openExternal(url)
+  })
 }
 
 // This method will be called when Electron has finished
